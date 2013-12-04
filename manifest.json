@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
 
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a 'browser action' with kittens.",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "https://secure.flickr.com/"
+  "name": "Juxtapoz",
+  "description": "This extension demonstrates a 'browser action' with search in gallery of Juxtapoz.",
+  "version": "0.0.2",
+"content_scripts": [
+    {
+      "matches": ["http://*.juxtapoz.com/gallery/*"],
+      "css": ["stylejuxtapoz.css"]
+    }
+  ],
+ 
   ]
 }
