@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-
   "name": "Juxtapoz",
-  "description": "This extension demonstrates a 'browser action' with search in gallery of Juxtapoz.",
-  "version": "0.0.2",
+  "description": "This extension removes everything besides Gallery from Juxtapoz homepage",
+  "version": "0.0.1",
 "content_scripts": [
     {
-      "matches": ["http://*.juxtapoz.com/gallery/*"],
-      "css": ["stylejuxtapoz.css"]
+      "matches": ["http://*.juxtapoz.com/*"],
+      "css": ["stylejuxtapoz.css"],
+      "js": ["jquery.js", "script.js"]      
     }
-  ],
- 
   ]
+ 
+  
 }
