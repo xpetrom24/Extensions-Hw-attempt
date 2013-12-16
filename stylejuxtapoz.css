@@ -41,7 +41,7 @@
 }
 
  #cmn_ad_tag_head #fwbanner {
-	display:none;
+	display:none !important;
 	
 }
 
